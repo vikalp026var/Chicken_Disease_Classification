@@ -8,6 +8,7 @@ from src.CnnClassifier.entity.config_entity import TrainingConfig
 
 
 
+
 class Training:
      def __init__(self,config:TrainingConfig):
           self.config=config

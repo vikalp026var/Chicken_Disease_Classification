@@ -4,7 +4,7 @@ from src.CnnClassifier import logger
 from src.CnnClassifier.logger.logg import logging
 
 
-class PreparebaseModel:
+class PreparebaseModelPipeline:
      def __init__(self):
           pass
      

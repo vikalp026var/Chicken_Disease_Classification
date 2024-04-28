@@ -1,10 +1,16 @@
-import os 
+import os
 import urllib.request as request
 import zipfile
+from pathlib import Path
+
+# from src.CnnClassifier.config.configuration import ConfigurationManager
+from ..config.configuration import ConfigurationManager
+
+from src.CnnClassifier.entity.config_entity import DataIngestionConfig
 from src.CnnClassifier.logger.logg import logging
 from src.CnnClassifier.utils.common import get_size
-from src.CnnClassifier.config.configuration import ConfigurationManager
-from src.CnnClassifier.entity.config_entity import DataIngestionConfig
+
+
 class DataIngestion:
      def __init__(self,config:DataIngestionConfig):
           self.config=config
